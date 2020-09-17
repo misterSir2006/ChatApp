@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		180907922512B06D00801A87 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180907912512B06D00801A87 /* UIColor.swift */; };
+		180AAB602512DBA000BEB9EC /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180AAB5F2512DBA000BEB9EC /* AlertService.swift */; };
 		184D2B81251125C2002D5135 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184D2B80251125C2002D5135 /* AppDelegate.swift */; };
 		184D2B8A251125C6002D5135 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 184D2B89251125C6002D5135 /* Assets.xcassets */; };
 		184D2B8D251125C6002D5135 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 184D2B8B251125C6002D5135 /* LaunchScreen.storyboard */; };
@@ -15,9 +17,9 @@
 		184D2BBD25113A8C002D5135 /* ServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184D2BBC25113A8C002D5135 /* ServiceAssembly.swift */; };
 		184D2BBF25113A98002D5135 /* CoreAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184D2BBE25113A98002D5135 /* CoreAssembly.swift */; };
 		184D2BC425114ECD002D5135 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 184D2BC325114ECD002D5135 /* Default-568h@2x.png */; };
-		184D2BC825117DA9002D5135 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184D2BC725117DA9002D5135 /* StartViewController.swift */; };
-		184D2BCA25117DB7002D5135 /* StartVCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184D2BC925117DB7002D5135 /* StartVCView.swift */; };
-		184D2BCC25117DD2002D5135 /* StartVCModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184D2BCB25117DD2002D5135 /* StartVCModel.swift */; };
+		184D2BC825117DA9002D5135 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184D2BC725117DA9002D5135 /* ProfileViewController.swift */; };
+		184D2BCA25117DB7002D5135 /* ProfileVCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184D2BC925117DB7002D5135 /* ProfileVCView.swift */; };
+		184D2BCC25117DD2002D5135 /* ProfileVCModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184D2BCB25117DD2002D5135 /* ProfileVCModel.swift */; };
 		68E2303C1AB1EA14ED4CBDD9 /* Pods_tChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C0DE827BEA9004600C950F1 /* Pods_tChat.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		180907912512B06D00801A87 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		180AAB5F2512DBA000BEB9EC /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
 		184D2B7D251125C2002D5135 /* tChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		184D2B80251125C2002D5135 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		184D2B89251125C6002D5135 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,9 +55,9 @@
 		184D2BBC25113A8C002D5135 /* ServiceAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAssembly.swift; sourceTree = "<group>"; };
 		184D2BBE25113A98002D5135 /* CoreAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreAssembly.swift; sourceTree = "<group>"; };
 		184D2BC325114ECD002D5135 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		184D2BC725117DA9002D5135 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
-		184D2BC925117DB7002D5135 /* StartVCView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartVCView.swift; sourceTree = "<group>"; };
-		184D2BCB25117DD2002D5135 /* StartVCModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartVCModel.swift; sourceTree = "<group>"; };
+		184D2BC725117DA9002D5135 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		184D2BC925117DB7002D5135 /* ProfileVCView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVCView.swift; sourceTree = "<group>"; };
+		184D2BCB25117DD2002D5135 /* ProfileVCModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVCModel.swift; sourceTree = "<group>"; };
 		2C0DE827BEA9004600C950F1 /* Pods_tChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3787125199D789E1828A9340 /* Pods-tChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tChat.release.xcconfig"; path = "Target Support Files/Pods-tChat/Pods-tChat.release.xcconfig"; sourceTree = "<group>"; };
 		7FD74E56395A48BA455B0EB7 /* Pods-tChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tChat.debug.xcconfig"; path = "Target Support Files/Pods-tChat/Pods-tChat.debug.xcconfig"; sourceTree = "<group>"; };
@@ -85,6 +89,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		180907932512B07700801A87 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				180907912512B06D00801A87 /* UIColor.swift */,
+				180AAB5F2512DBA000BEB9EC /* AlertService.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		184D2B74251125C2002D5135 = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +126,7 @@
 				184D2BB525113A25002D5135 /* CoreLayer */,
 				184D2B80251125C2002D5135 /* AppDelegate.swift */,
 				184D2BB3251138E0002D5135 /* RootAssembly.swift */,
+				180907932512B07700801A87 /* Extensions */,
 				184D2BB025112917002D5135 /* Resources */,
 			);
 			path = tChat;
@@ -157,19 +171,19 @@
 		184D2BC025114694002D5135 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				184D2BC525117D1E002D5135 /* StartViewController */,
+				184D2BC525117D1E002D5135 /* ProfileViewController */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
 		};
-		184D2BC525117D1E002D5135 /* StartViewController */ = {
+		184D2BC525117D1E002D5135 /* ProfileViewController */ = {
 			isa = PBXGroup;
 			children = (
-				184D2BCB25117DD2002D5135 /* StartVCModel.swift */,
-				184D2BC925117DB7002D5135 /* StartVCView.swift */,
-				184D2BC725117DA9002D5135 /* StartViewController.swift */,
+				184D2BCB25117DD2002D5135 /* ProfileVCModel.swift */,
+				184D2BC925117DB7002D5135 /* ProfileVCView.swift */,
+				184D2BC725117DA9002D5135 /* ProfileViewController.swift */,
 			);
-			path = StartViewController;
+			path = ProfileViewController;
 			sourceTree = "<group>";
 		};
 		7D2945167651CBE15F8188B3 /* Frameworks */ = {
@@ -368,10 +382,12 @@
 				184D2BBD25113A8C002D5135 /* ServiceAssembly.swift in Sources */,
 				184D2BBA25113A74002D5135 /* PresentationAssembly.swift in Sources */,
 				184D2BB4251138E0002D5135 /* RootAssembly.swift in Sources */,
-				184D2BCA25117DB7002D5135 /* StartVCView.swift in Sources */,
-				184D2BCC25117DD2002D5135 /* StartVCModel.swift in Sources */,
+				180AAB602512DBA000BEB9EC /* AlertService.swift in Sources */,
+				180907922512B06D00801A87 /* UIColor.swift in Sources */,
+				184D2BCA25117DB7002D5135 /* ProfileVCView.swift in Sources */,
+				184D2BCC25117DD2002D5135 /* ProfileVCModel.swift in Sources */,
 				184D2B81251125C2002D5135 /* AppDelegate.swift in Sources */,
-				184D2BC825117DA9002D5135 /* StartViewController.swift in Sources */,
+				184D2BC825117DA9002D5135 /* ProfileViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

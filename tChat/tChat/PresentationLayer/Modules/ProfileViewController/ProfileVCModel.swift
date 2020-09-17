@@ -8,10 +8,10 @@
 
 import UIKit
 
-protocol IStartVCModel {
+protocol IProfileVCModel {
     
 }
 
-class StartVCModel: IStartVCModel {
+class ProfileVCModel: IProfileVCModel {
     
 }

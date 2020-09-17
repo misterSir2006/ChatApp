@@ -18,9 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
-        let homeViewController = UIViewController()
-        homeViewController.view.backgroundColor = .blue
-        window?.rootViewController = homeViewController
+        window?.rootViewController = rootAssembly.presentationAssembly.profileViewController()
         
         #if DEBUG
             print("finishLaunching")
