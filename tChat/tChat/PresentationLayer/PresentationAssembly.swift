@@ -11,6 +11,10 @@ import UIKit
 protocol IPresentationAssembly {
     
     func profileViewController() -> ProfileViewController
+    
+    func conversationListViewController() -> ConversationListViewController
+    
+    func mainNavigationController() -> UINavigationController
 }
 
 class PresentationAssembly: IPresentationAssembly {
@@ -22,6 +26,19 @@ class PresentationAssembly: IPresentationAssembly {
     }
     
     
+//MARK:- NavigationController
+    
+    func mainNavigationController() -> UINavigationController {
+           
+        let conversationListController = conversationListViewController()
+        conversationListController.navigationItem.title = "Tinkoff Chat"
+        
+        let navigation = UINavigationController(rootViewController: conversationListController)
+        
+        return navigation
+    }
+       
+    
 //MARK:- ProfileViewController
     func profileViewController() -> ProfileViewController {
         let model = profileVCModel()
@@ -32,4 +49,18 @@ class PresentationAssembly: IPresentationAssembly {
     private func profileVCModel() -> ProfileVCModel {
         return ProfileVCModel()
     }
+
+//MARK:- ConversationListViewController
+    func conversationListViewController() -> ConversationListViewController {
+        let model = conversationListVCModel()
+        let controller = ConversationListViewController(model: model, assembly: self)
+        return controller
+    }
+    
+    private func conversationListVCModel() -> ConversationListVCModel {
+        return ConversationListVCModel()
+    }
+
+    
+    
 }

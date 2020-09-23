@@ -13,17 +13,21 @@ class ProfileVCView: UIView {
     
     let userImage: UIImageView = {
         let imageView = UIImageView()
-        imageView.image = UIImage(named: "placeholder-user")
+        imageView.image = Constants.Design.Images.userImage
         imageView.clipsToBounds = true
         imageView.layer.cornerRadius = 48
         
         return imageView
     }()
     
+    
+    
     let addPhotoButton: UIButton = {
         let button = UIButton()
-        button.backgroundColor = UIColor(hexString: "#3F78F0")
-        button.setImage(UIImage(named: "slr-camera-2-xxl"), for: .normal)
+        button.backgroundColor = Constants.Design.Colors.blue
+        button.setBackgroundColor(color: Constants.Design.Colors.highlightedBlue, forState: .highlighted)
+        button.setImage(Constants.Design.Images.addPhotoButton, for: .normal)
+        button.setImage(Constants.Design.Images.addPhotoButton, for: .highlighted)
         button.imageEdgeInsets = UIEdgeInsets(top: 24, left: 24, bottom: 24, right: 24)
         button.layer.cornerRadius = 48
         
@@ -34,7 +38,7 @@ class ProfileVCView: UIView {
         let label = UILabel()
         label.text = "Илья Шахназаров"
         label.font = UIFont.boldSystemFont(ofSize: 32)
-        label.textColor = UIColor(hexString: "#202020")
+        label.textColor = Constants.Design.Colors.black
         
         return label
     }()
@@ -51,9 +55,9 @@ class ProfileVCView: UIView {
     let editButton: UIButton = {
         let button = UIButton()
         button.setTitle("Редактировать", for: .normal)
-        button.setTitleColor(UIColor(hexString: "#202020"), for: .normal)
+        button.setTitleColor(Constants.Design.Colors.black, for: .normal)
         button.layer.borderWidth = 1
-        button.layer.borderColor = UIColor(hexString: "202020").cgColor
+        button.layer.borderColor = Constants.Design.Colors.black.cgColor
         button.layer.cornerRadius = 12
         
         return button
@@ -75,14 +79,14 @@ class ProfileVCView: UIView {
     
     private func fill() {
         
-        backgroundColor = UIColor(hexString: "#FFFFFF")
+        backgroundColor = Constants.Design.Colors.white
         
         addSubview(userImage)
         userImage.snp.makeConstraints { make in
             make.top.equalTo(safeAreaLayoutGuide.snp.top).offset(16)
-            make.left.equalToSuperview().offset(16)
-            make.right.equalToSuperview().offset(-16)
-            make.height.equalToSuperview().multipliedBy(0.5)
+            make.centerX.equalToSuperview()
+            make.width.equalTo(352)
+            make.height.equalTo(userImage.snp.width)
         }
         
         addSubview(addPhotoButton)
