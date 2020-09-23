@@ -16,7 +16,6 @@ class ConversationListCellView: UIView {
     let nameLabel: UILabel = {
         let label = UILabel()
         label.textColor = Constants.Design.Colors.black
-        label.text = "Илья"
         label.font = UIFont.systemFont(ofSize: 16)
         label.numberOfLines = 1
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -26,7 +25,6 @@ class ConversationListCellView: UIView {
     let timeLabel: UILabel = {
         let label = UILabel()
         label.textColor = Constants.Design.Colors.black
-        label.text = "2:28"
         label.font = UIFont.systemFont(ofSize: 12)
         label.numberOfLines = 1
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -36,9 +34,8 @@ class ConversationListCellView: UIView {
     let lastMessageLabel: UILabel = {
         let label = UILabel()
         label.textColor = Constants.Design.Colors.black
-        label.text = "Сегодня в дружбе встречаемся в 13:00"
         label.font = UIFont.systemFont(ofSize: 16)
-        label.numberOfLines = 0
+        label.numberOfLines = 1
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()

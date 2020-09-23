@@ -13,6 +13,7 @@ struct Constants {
     // MARK:- Content
     struct Content {
         static let conversationListCellReuseIdentifier = "conversationListCell"
+        static let conversationCellReuseIdentifier = "conversationCell"
     }
     
     // MARK:- Design
@@ -26,6 +27,7 @@ struct Constants {
             static let blue = UIColor(hexString: "#3F78F0")
             static let highlightedBlue = UIColor(hexString: "#6899EE")
             static let messageYellow = UIColor(hexString: "#FFE08A")
+            static let lightestGray = UIColor(hexString: "#F5F5F5")
         }
     // MARK:- Images
         

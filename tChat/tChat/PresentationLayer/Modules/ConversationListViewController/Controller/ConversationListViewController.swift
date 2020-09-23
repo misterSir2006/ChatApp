@@ -106,9 +106,14 @@ extension ConversationListViewController: UITableViewDataSource {
 extension ConversationListViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let conversationListViewController = presentationAssembly.conversationListViewController()
-        conversationListViewController.navigationItem.title = "Tinkoff Chat"
-        navigationController?.pushViewController(conversationListViewController, animated: true)
+
+        let conversationViewController = presentationAssembly.conversationViewController()
+        if indexPath.section == 0 {
+            conversationViewController.navigationItem.title = data1[indexPath.row].name
+        } else {
+            conversationViewController.navigationItem.title = data2[indexPath.row].name
+        }
+        navigationController?.pushViewController(conversationViewController, animated: true)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

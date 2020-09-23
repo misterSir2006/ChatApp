@@ -15,6 +15,9 @@ protocol IPresentationAssembly {
     func conversationListViewController() -> ConversationListViewController
     
     func mainNavigationController() -> UINavigationController
+    
+    func conversationViewController() -> ConversationViewController
+    
 }
 
 class PresentationAssembly: IPresentationAssembly {
@@ -61,6 +64,16 @@ class PresentationAssembly: IPresentationAssembly {
         return ConversationListVCModel()
     }
 
+//MARK:- ConversationViewController
+    func conversationViewController() -> ConversationViewController {
+        let model = conversationVCModel()
+        let controller = ConversationViewController(model: model, assembly: self)
+        return controller
+    }
+    
+    private func conversationVCModel() -> ConversationVCModel {
+        return ConversationVCModel()
+    }
     
     
 }
